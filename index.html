@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- animate  library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- animate library used to wow -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- aos link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- bootstrap -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <!-- fancybox -->
+    <link rel="stylesheet" type="text/css" href="./css/jquery.fancybox.min.css">
+    <!-- style -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Arsha Website </title>
+</head>
+
+<body data-spy="scroll
+" data-target="#main-nav" id="home">
+    <div class="spinner">
+        <div class="scaling-squares-spinner" :style="spinnerStyle">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+    </div>
+    <!-- navbar -->
+    <div class="navbar 
+        navbar-expand-lg 
+        bg--prim 
+        fixed-top
+        py-3  " id="main-nav">
+        <div class="container">
+            <h1><a href="index.html" class="navbar-brand
+                text-uppercase">Arsha</a>
+            </h1>
+
+            <button class="navbar-toggler " data-toggle="collapse" data-target="#navbarCollapse">
+                <i class="fa fa-list fa-2x text-light"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mr-2">
+                        <a href="#home" class="nav-link ">Home</a>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a href="#services" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a href="#team" class="nav-link">Team</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item text-dark" href="#">Blog</a>
+                            <a class="dropdown-item text-dark" href="#">Sale</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+
+                <button class="btn btn-outline-primary btn--light-radius">Get Started</button>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- end nav -->
+    <!-- start header -->
+    <header class="main-header bg--prim">
+        <div class="container">
+            <div class="row  ">
+                <div class="py-5 col-lg-6 d-flex flex-column  justify-content-center align-items-md-start align-items-center order-2  order-lg-1
+                 " data-aos="fade-up" data-aos-duration="1500">
+                    <h2 class="display-4">Better Solution For Your Business</h2>
+                    <p class="header__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat,
+                        necessitatibus.</p>
+                    <div class="header__btns mt-5">
+                        <button class="btn btn-info btn__start">Get Started</button>
+                        <a href="#" class="text-light btn__play"><i
+                                class="fa fa-play ml-3 mr-2 rounded-circle btn__play-i"></i>
+                            <p class="d-inline-block btn__play-p"> Watch Video</p>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="mb-5 col-lg-6 order-1  order-lg-2
+                     d-flex  justify-content-center align-items-md-start align-items-center " data-aos="zoom-in"
+                    data-aos-duration="1500">
+                    <img src="./img/hero-img.png" class="header__img" alt="">
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+    <!-- start client section -->
+    <section class="client bg--light py-5" id="client">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-duration="1500"><img
+                        src="./img/clients//client-1.png" alt="" class="img-fluid client__img mr-sm-3"></div>
+                <div class="col-lg-2 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-duration="1500"><img
+                        src="./img/clients//client-2.png" alt="" class="img-fluid client__img mr-sm-3"
+                        data-aos="zoom-in" data-aos-duration="1500"></div>
+                <div class="col-lg-2 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-duration="1500"><img
+                        src="./img/clients//client-3.png" alt="" class="img-fluid client__img mr-sm-3"></div>
+                <div class="col-lg-2 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-duration="1500"><img
+                        src="./img/clients//client-4.png" alt="" class="img-fluid client__img mr-sm-3"></div>
+                <div class="col-lg-2 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-duration="1500"><img
+                        src="./img/clients//client-5.png" alt="" class="img-fluid client__img mr-sm-3"></div>
+                <div class="col-lg-2 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-duration="1500"><img
+                        src="./img/clients//client-6.png" alt="" class="img-fluid client__img mr-sm-3"></div>
+
+            </div>
+        </div>
+    </section>
+    <!-- end client section -->
+
+    <!-- start about us section -->
+    <section class="about py-5" id="about">
+        <div class="container py-5" data-aos="fade-up" data-aos-duration="1500">
+            <h2 class="section__title text-uppercase  py-4">About Us</h2>
+            <div class="row mt-5">
+                <div class="col-lg-6">
+                    <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit . Similique nam
+                        labore pariatur harum quam recusandae.</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-check mr-2 my-3 text-info"></i> Ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat</li>
+                        <li><i class="fa fa-check mr-2 my-3 text-info"></i> Duis aute irure dolor in reprehenderit in
+                            voluptate velit</li>
+                        <li><i class="fa fa-check mr-2 my-3 text-info"></i> Ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <p class="about__text">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                        laborum.</p>
+                    <button class="btn btn-outline-info about__btn">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end about us section -->
+    <!-- start why us section -->
+    <section class="why-us lightBlue-bg py-5" id="why-choose-us">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class=" why-us__title" data-aos="fade-up" data-aos-duration="1500">Eum ipsam laborum deleniti
+                        <span>velit pariatur architecto aut
+                            nihil</span></h2>
+                    <p class="why-us__text" data-aos="fade-up" data-aos-duration="1500">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit</p>
+                    <!--.... start accordion........ -->
+                    <div class="accordion text-muted" data-aos="fade-up" data-aos-duration="1500" id="accordionExample">
+                        <div class="card mb-3">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <li class=text-left" type="button" data-toggle="collapse" data-target="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        <span class="text-info">01</span> Non consectetur a erat nam at lectus urna
+                                        duis?
+                                    </li>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet
+                                    non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor
+                                    purus non.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <li class=text-left" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                                        aria-expanded="true" aria-controls="collapseTwo">
+                                        <span class="text-info">02</span> Non consectetur a erat nam at lectus urna
+                                        duis?
+                                    </li>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet
+                                    non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor
+                                    purus non.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <li class=text-left" type="button" data-toggle="collapse"
+                                        data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                        <span class="text-info">03</span> Non consectetur a erat nam at lectus urna
+                                        duis?
+                                    </li>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet
+                                    non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor
+                                    purus non.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--.... end accordion........ -->
+                </div>
+                <div class="col-lg-6" data-aos="zoom-in" data-aos-duration="1500">
+                    <img src="./img/why-us.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end why us section -->
+    <!-- start skills section -->
+    <section class="skills py-5 " id="skills">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6 d-flex justify-content-center align-items-center" data-aos="fade-right"
+                    data-aos-duration="1500">
+                    <img src="./img/skills.png" class="img-fluid skill__img" alt="">
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1500">
+                    <h2 class="skills__title">Eum ipsam laborum delenitivelit pariatur architecto aut nihil</h2>
+                    <p class="skills__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit</p>
+                    <div class="progress-boxes">
+                        <div class="progress-box mb-4 ">
+                            <div class="d-flex justify-content-between font-weight-bold">
+                                <p class="text--prim text-uppercase">Html</p>
+                                <p class="text--prim">25%</p>
+                            </div>
+
+                            <div class="progress ">
+                                <div class="progress-bar bg--prim " role="progressbar" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress-box mb-4">
+                            <div class="d-flex justify-content-between font-weight-bold">
+                                <p class="text--prim  text-uppercase">Css</p>
+                                <p class="text--prim ">50%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg--prim" role="progressbar" aria-valuenow="50"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress-box mb-4">
+                            <div class="d-flex justify-content-between font-weight-bold">
+                                <p class="text--prim text-uppercase">Javascript</p>
+                                <p class="text--prim ">75%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg--prim" role="progressbar" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress-box mb-4">
+                            <div class="d-flex justify-content-between font-weight-bold">
+                                <p class="text--prim text-uppercase">Photoshop</p>
+                                <p class="text--prim ">100%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg--prim" role="progressbar" aria-valuenow="100"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end skills section -->
+    <!-- start services section -->
+    <section class="services  lightBlue-bg py-5" id="services">
+        <div class="container py-5">
+            <h2 class="section__title text-uppercase  py-4">About Us</h2>
+            <p class="services__text py-3 text-center text-muted">Magnam dolores commodi suscipit. Necessitatibus eius
+                consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate.
+                Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <div class="row">
+                <div class="col-xl-3 col-lg-6 " data-aos="zoom-in" data-aos-duration="2000">
+                    <div class="services-box mr-lg-3 mr-xl-3 px-3 py-5 mb-3 ">
+                        <i class="text-info fa fa-football-ball fa-2x"></i>
+                        <h4 class="text--prim my-3">Lorem Ipsun</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+
+                </div>
+                <div class="col-xl-3 col-lg-6  " data-aos="zoom-in" data-aos-duration="2000">
+                    <div class="services-box mr-xl-3 px-3 py-5  mb-3">
+                        <i class="text-info fa fa-folder-minus fa-2x"></i>
+                        <h4 class="text--prim my-3">Sed ut perspici</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 " data-aos="zoom-in" data-aos-duration="2000">
+                    <div class="services-box mr-lg-3 mr-xl-3 px-3 py-5  mb-3">
+                        <i class="text-info fa fa-clock fa-2x"></i>
+                        <h4 class="text--prim my-3">Magni Dolores</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 " data-aos="zoom-in" data-aos-duration="2000">
+                    <div class="services-box mr-xl-3 px-3 py-5  mb-3">
+                        <i class="text-info fa fa-paper-plane fa-2x"></i>
+                        <h4 class="text--prim my-3">Nemo Enimn</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end services section -->
+    <!-- start Call section -->
+    <section class="call text-light py-5" id="call">
+        <div class="container py-5">
+            <div class="row" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="col-md-9 d-flex flex-column justify-content-center ">
+                    <h2 class="font-weight-bold">Call To Action</h2>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                        mollit anim id est laborum.</p>
+                </div>
+                <div class="col-md-3  d-flex flex-column justify-content-center">
+                    <button class="btn btn-outline-light call__btn">Call To Action</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end Call section -->
+
+
+
+
+
+
+    <!-- start portfolio section -->
+    <section class="portfolio py-5 " id="portfolio">
+        <h2 class="section__title text-uppercase  py-4" data-aos="fade-up" data-aos-duration="1500">Portfolio</h2>
+        <p class="portfolio__text text-center" data-aos="fade-up" data-aos-duration="1500">Magnam dolores commodi
+            suscipit. Necessitatibus eius consequatur ex
+            aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit
+            suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <ul class="portfolio__list list-unstyled" data-aos="fade-up" data-aos-duration="1000">
+            <li class="*" class="selected">all</li>
+            <li data-filter=".app">app</li>
+            <li data-filter=".card">card</li>
+            <li data-filter=".web">web</li>
+
+        </ul>
+        <div class="container">
+            <div class="row " data-aos="fade-up" data-aos-duration="2000" id="container">
+                <div class="mix app col-lg-4 col-md-6  mb-4 portfolio__box">
+                    <div class="portfolio__img">
+                        <img src="./img/portfolio/portfolio-1.jpg" class="img-fluid">
+                    </div>
+                    <div class="portfolio__content">
+                        <h5 class="mb-0">App1</h5>
+                        <p>App</p>
+                        <div class="d-flex justify-content-end portfolio__links">
+                            <a href="./img/portfolio/portfolio-1.jpg" data-fancybox="gallary"><i
+                                    class="fa fa-plus mr-3"></i></a>
+                            <a href="details.html"><i class="fa fa-link mr-3"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="mix card col-lg-4 col-md-6 mb-4 portfolio__box">
+                    <div class="portfolio__img">
+                        <img src="./img/portfolio/portfolio-2.jpg" class="img-fluid">
+                    </div>
+                    <div class="portfolio__content">
+                        <h5 class="mb-0">App1</h5>
+                        <p>App</p>
+                        <div class="d-flex justify-content-end portfolio__links">
+                            <a href="./img/portfolio/portfolio-2.jpg" data-fancybox="gallary"><i
+                                    class="fa fa-plus mr-3"></i></a>
+                            <a href="details.html"><i class="fa fa-link mr-3"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="mix web col-lg-4 col-md-6 mb-4 portfolio__box">
+                    <div class="portfolio__img">
+                        <img src="./img/portfolio/portfolio-3.jpg" class="img-fluid">
+                    </div>
+                    <div class="portfolio__content">
+                        <h5 class="mb-0">App1</h5>
+                        <p>App</p>
+                        <div class="d-flex justify-content-end portfolio__links">
+                            <a href="./img/portfolio/portfolio-3.jpg" data-fancybox="gallary"><i
+                                    class="fa fa-plus mr-3"></i></a>
+                            <a href="details.html"><i class="fa fa-link mr-3"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="mix app col-lg-4 col-md-6 mb-4 portfolio__box">
+                    <div class="portfolio__img">
+                        <img src="./img/portfolio/portfolio-5.jpg" class="img-fluid">
+                    </div>
+                    <div class="portfolio__content">
+                        <h5 class="mb-0">App1</h5>
+                        <p>App</p>
+                        <div class="d-flex justify-content-end portfolio__links">
+                            <a href="./img/portfolio/portfolio-5.jpg" data-fancybox="gallary"><i
+                                    class="fa fa-plus mr-3"></i></a>
+                            <a href="details.html"><i class="fa fa-link mr-3"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="mix card col-lg-4 col-md-6 mb-4 portfolio__box">
+                    <div class="portfolio__img">
+                        <img src="./img/portfolio/portfolio-6.jpg" class="img-fluid">
+                    </div>
+                    <div class="portfolio__content">
+                        <h5 class="mb-0">App1</h5>
+                        <p>App</p>
+                        <div class="d-flex justify-content-end portfolio__links">
+                            <a href="./img/portfolio/portfolio-6.jpg" data-fancybox="gallary"><i
+                                    class="fa fa-plus mr-3"></i></a>
+                            <a href="details.html"><i class="fa fa-link mr-3"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="mix web col-lg-4 col-md-6 mb-4 portfolio__box">
+                    <div class="portfolio__img">
+                        <img src="./img/portfolio/portfolio-4.jpg" class="img-fluid">
+                    </div>
+                    <div class="portfolio__content">
+                        <h5 class="mb-0">App1</h5>
+                        <p>App</p>
+                        <div class="d-flex justify-content-end portfolio__links">
+                            <a href="./img/portfolio/portfolio-4.jpg" data-fancybox="gallary"><i
+                                    class="fa fa-plus mr-3"></i></a>
+                            <a href="details.html"><i class="fa fa-link mr-3"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="mix app col-lg-4 col-md-6 mb-4 portfolio__box">
+                    <div class="portfolio__img">
+                        <img src="./img/portfolio/portfolio-7.jpg" class="img-fluid">
+                    </div>
+                    <div class="portfolio__content">
+                        <h5 class="mb-0">App1</h5>
+                        <p>App</p>
+                        <div class="d-flex justify-content-end portfolio__links">
+                            <a href="./img/portfolio/portfolio-7.jpg" data-fancybox="gallary"><i
+                                    class="fa fa-plus mr-3"></i></a>
+                            <a href="details.html"><i class="fa fa-link mr-3"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="mix card col-lg-4 col-md-6 mb-4 portfolio__box">
+                    <div class="portfolio__img">
+                        <img src="./img/portfolio/portfolio-8.jpg" class="img-fluid">
+                    </div>
+                    <div class="portfolio__content">
+                        <h5 class="mb-0">App1</h5>
+                        <p>App</p>
+                        <div class="d-flex justify-content-end portfolio__links">
+                            <a href="./img/portfolio/portfolio-8.jpg" data-fancybox="gallary"><i
+                                    class="fa fa-plus mr-3"></i></a>
+                            <a href="details.html"><i class="fa fa-link mr-3"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="mix web col-lg-4 col-md-6 mb-4 portfolio__box">
+                    <div class="portfolio__img">
+                        <img src="./img/portfolio/portfolio-9.jpg" class="img-fluid">
+                    </div>
+                    <div class="portfolio__content">
+                        <h5 class="mb-0">App1</h5>
+                        <p>App</p>
+                        <div class="d-flex justify-content-end portfolio__links">
+                            <a href="./img/portfolio/portfolio-9.jpg" data-fancybox="gallary"><i
+                                    class="fa fa-plus mr-3"></i></a>
+                            <a href="details.html"><i class="fa fa-link mr-3"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- end portfolio section -->
+    <!-- start team section -->
+    <section class="team lightBlue-bg py-5" id="team">
+        <div class="container py-5">
+            <h2 class="section__title text-uppercase  py-4" data-aos="fade-up" data-aos-duration="1500">Team</h2>
+            <p class=" py-3 text-center text-muted" data-aos="fade-up" data-aos-duration="1500">Magnam dolores commodi
+                suscipit. Necessitatibus eius consequatur ex
+                aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui
+                impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <div class="row">
+                <div class="col-lg-6  mb-4">
+                    <div class="team__box p-4 " data-aos="zoom-in" data-aos-duration="2000">
+                        <div class="d-flex team__column">
+                            <div class="team__img"><img src="./img/team/team-1.jpg" class="rounded-circle  mr-4" alt="">
+                            </div>
+
+                            <div class="team__content">
+                                <h3 class="text--prim">Walter White</h3>
+                                <p class="team__text team__text--line">Chief Executive Officer</p>
+                                <p class="team__text">Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                                <div class="team__icons d-flex">
+                                    <a href="http://www.facebook.com" class="mr-2 lightBlue-bg rounded-circle"><i
+                                            class="fab fa-facebook text--prim p-2 "></i></a>
+                                    <a href="http://www.twitter.com" class="mr-2 lightBlue-bg rounded-circle"><i
+                                            class="fab fa-twitter text--prim p-2"></i></a>
+                                    <a href="http://www.instagram.com" class="mr-2 lightBlue-bg rounded-circle"><i
+                                            class="fab fa-instagram text--prim p-2"></i></a>
+                                    <a href="http://www.linkedin.com" class="mr-2 lightBlue-bg rounded-circle"><i
+                                            class="fab fa-linkedin text--prim p-2"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="team__box p-4" data-aos="zoom-in" data-aos-duration="2000">
+                        <div class="d-flex team__column">
+                            <div class="team__img"><img src="./img/team/team-2.jpg" class="rounded-circle  mr-4" alt="">
+                            </div>
+
+                            <div class="team__content">
+                                <h3 class="text--prim">Sarah Jhonson</h3>
+                                <p class="team__text team__text--line">Chief Executive Officer</p>
+                                <p class="team__text">Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                                <div class="team__icons d-flex">
+                                    <a href="http://www.facebook.com" class="mr-2 lightBlue-bg rounded-circle"><i
+                                            class="fab fa-facebook text--prim p-2 "></i></a>
+                                    <a href="http://www.twitter.com" class="mr-2 lightBlue-bg rounded-circle"><i
+                                            class="fab fa-twitter text--prim p-2"></i></a>
+                                    <a href="http://www.instagram.com" class="mr-2 lightBlue-bg rounded-circle"><i
+                                            class="fab fa-instagram text--prim p-2"></i></a>
+                                    <a href="http://www.linkedin.com" class="mr-2 lightBlue-bg rounded-circle"><i
+                                            class="fab fa-linkedin text--prim p-2"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-6  mb-4" data-aos="zoom-in" data-aos-duration="2000">
+                    <div class="team__box p-4">
+                        <div class="d-flex team__column">
+                            <div class="team__img"><img src="./img/team/team-3.jpg" class="rounded-circle  mr-4" alt="">
+                            </div>
+
+                            <div class="team__content">
+                                <h3 class="text--prim">William Anderson</h3>
+                                <p class="team__text team__text--line">CTO</p>
+                                <p class="team__text">Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                                <div class="team__icons d-flex">
+                                    <a href="http://www.facebook.com" class="mr-2 lightBlue-bg rounded-circle"><i
+                                            class="fab fa-facebook text--prim p-2 "></i></a>
+                                    <a href="http://www.twitter.com" class="mr-2 lightBlue-bg rounded-circle"><i
+                                            class="fab fa-twitter text--prim p-2"></i></a>
+                                    <a href="http://www.instagram.com" class="mr-2 lightBlue-bg rounded-circle"><i
+                                            class="fab fa-instagram text--prim p-2"></i></a>
+                                    <a href="http://www.linkedin.com" class="mr-2 lightBlue-bg rounded-circle"><i
+                                            class="fab fa-linkedin text--prim p-2"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-6  mb-4" data-aos="zoom-in" data-aos-duration="2000">
+                    <div class="team__box p-4">
+                        <div class="d-flex team__column">
+                            <div class="team__img"><img src="./img/team/team-4.jpg" class="rounded-circle  mr-4" alt="">
+                            </div>
+
+                            <div class="team__content">
+                                <h3 class="text--prim">Amanda Jepson</h3>
+                                <p class="team__text team__text--line">Chief Executive Officer</p>
+                                <p class="team__text">Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                                <div class="team__icons d-flex">
+                                    <a href="http://www.facebook.com" class="mr-2 lightBlue-bg rounded-circle"><i
+                                            class="fab fa-facebook text--prim p-2 "></i></a>
+                                    <a href="http://www.twitter.com" class="mr-2 lightBlue-bg rounded-circle"><i
+                                            class="fab fa-twitter text--prim p-2"></i></a>
+                                    <a href="http://www.instagram.com" class="mr-2 lightBlue-bg rounded-circle"><i
+                                            class="fab fa-instagram text--prim p-2"></i></a>
+                                    <a href="http://www.linkedin.com" class="mr-2 lightBlue-bg rounded-circle"><i
+                                            class="fab fa-linkedin text--prim p-2"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    </ div>
+                </div>
+            </div>
+    </section>
+    <!-- end team section -->
+
+    <!-- start pricing section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2 class="section__title text-uppercase  py-4" data-aos="fade-up" data-aos-duration="1500">Pricing</h2>
+            <p class="pricing__p mb-5" data-aos="fade-up" data-aos-duration="1500">Magnam dolores commodi suscipit.
+                Necessitatibus eius consequatur ex aliquid fuga
+                eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit
+                alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <div class="row">
+                <div class="col-md-4  " data-aos="fade-up" data-aos-duration="2000">
+                    <div class="pricing__box py-5 px-4 mb-5 ">
+                        <h5 class="text--prim ">Free Plan</h5>
+                        <p class="text--prim pricing__text mb-0"><i class="fa fa-dollar-sign "></i> <span
+                                class="zero display-4 ">0</span></p>
+                        <h5 class="text-info mt-0">per month</h5>
+                        <ul class="list-unstyled my-5">
+                            <li class="mb-3"><i class="fa fa-check mr-2 text-success"></i> <span class="">Quam
+                                    adipiscing vitae proin</span></li>
+                            <li class="mb-3"><i class="fa fa-check mr-2 text-success"></i><span class="">Quam adipiscing
+                                    vitae proin</span></li>
+                            <li class="mb-3"><i class="fa fa-check mr-2 text-success"></i><span class="">Quam adipiscing
+                                    vitae proin</span></li>
+                            <li class="mb-3 wrong-li"><i class="fa fa-times mr-2 "></i><span
+                                    class="wrong-span ">Pharetra massa massa ultricies</span></li>
+                            <li class="mb-3 wrong-li"><i class="fa fa-times mr-2 "></i><span class="wrong-span">Quam
+                                    adipiscing vitae proin</span></li>
+
+                        </ul>
+                        <button class="btn btn-outline-info pricing__btn">Get Started</button>
+                    </div>
+                </div>
+                <div class="col-md-4 " data-aos="fade-up" data-aos-duration="2000">
+                    <div class="pricing__box pricing__box--center py-5 px-4 mb-5">
+                        <h5 class="text--prim ">Free Plan</h5>
+                        <p class="text--prim pricing__text mb-0"><i class="fa fa-dollar-sign "></i> <span
+                                class="zero display-4 ">0</span></p>
+                        <h5 class="text-info mt-0">per month</h5>
+                        <ul class="list-unstyled my-5">
+                            <li class="mb-3"><i class="fa fa-check mr-2 text-success"></i> <span class="">Quam
+                                    adipiscing vitae proin</span></li>
+                            <li class="mb-3"><i class="fa fa-check mr-2 text-success"></i><span class="">Quam adipiscing
+                                    vitae proin</span></li>
+                            <li class="mb-3"><i class="fa fa-check mr-2 text-success"></i><span class="">Quam adipiscing
+                                    vitae proin</span></li>
+                            <li class="mb-3"><i class="fa fa-check mr-2 text-success"></i><span class="">Quam adipiscing
+                                    vitae proin</span></li>
+                            <li class="mb-3"><i class="fa fa-check mr-2 text-success"></i><span class="">Quam adipiscing
+                                    vitae proin</span></li>
+
+                        </ul>
+                        <button class="btn btn-info pricing__btn">Get Started</button>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="pricing__box py-5 px-4 mb-5">
+                        <h5 class="text--prim ">Free Plan</h5>
+                        <p class="text--prim pricing__text mb-0"><i class="fa fa-dollar-sign "></i> <span
+                                class="zero display-4 ">0</span></p>
+                        <h5 class="text-info mt-0">per month</h5>
+                        <ul class="list-unstyled my-5">
+                            <li class="mb-3"><i class="fa fa-check mr-2 text-success"></i> <span class="">Quam
+                                    adipiscing vitae proin</span></li>
+                            <li class="mb-3"><i class="fa fa-check mr-2 text-success"></i><span class="">Quam adipiscing
+                                    vitae proin</span></li>
+                            <li class="mb-3"><i class="fa fa-check mr-2 text-success"></i><span class="">Quam adipiscing
+                                    vitae proin</span></li>
+                            <li class="mb-3"><i class="fa fa-check mr-2 text-success"></i><span class="">Quam adipiscing
+                                    vitae proin</span></li>
+                            <li class="mb-3"><i class="fa fa-check mr-2 text-success"></i><span class="">Quam adipiscing
+                                    vitae proin</span></li>
+
+                        </ul>
+                        <button class="btn btn-outline-info pricing__btn">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end pricing section -->
+    <section class="questions lightBlue-bg" id="questions">
+        <div class="container py-5">
+            <h2 class="section__title text-uppercase  py-4" data-aos="fade-up" data-aos-duration="1500">Frequently Asked
+                Questions</h2>
+            <p class=" py-3 text-center text-muted" data-aos="fade-up" data-aos-duration="1500">Magnam dolores commodi
+                suscipit. Necessitatibus eius consequatur ex
+                aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui
+                impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <!--.... start accordion........ -->
+            <div class="row">
+                <div class="col">
+                    <div class="accordion text-muted" id="accordionExample">
+                        <div class="card mb-3">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <li class=text-left type="button" data-toggle="collapse" data-target="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        <span class="q-span"><i class="fa fa-question"></i></span>
+                                        <p class=" d-inline-block"> Non consectetur a erat nam at lectus urna
+                                            duis?</p>
+                                    </li>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet
+                                    non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor
+                                    purus non.
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card mb-3">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <li class=text-left type="button" data-toggle="collapse" data-target="#collapseTwo"
+                                        aria-expanded="true" aria-controls="collapseTwo">
+                                        <span class="q-span"><i class="fa fa-question"></i></span>
+                                        <p class=" d-inline-block"> Non consectetur a erat nam at lectus urna
+                                            duis?</p>
+                                    </li>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet
+                                    non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor
+                                    purus non.
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="card mb-3">
+                            <div class=" card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <li class=text-left" type="button" data-toggle="collapse"
+                                        data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                        <span class="q-span"><i class="fa fa-question"></i></span>
+                                        <p class=" d-inline-block"> Non consectetur a erat nam at lectus urna
+                                            duis?</p>
+                                    </li>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet
+                                    non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor
+                                    purus non.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--.... end accordion........ -->
+        </div>
+    </section>
+    <!-- end question section -->
+    <!-- start contact section -->
+    <section class="contact py-5" id="contact">
+        <div class="container py-5">
+            <h2 class="section__title text-uppercase  py-4" data-aos="fade-up" data-aos-duration="1500">Contact</h2>
+            <p class=" py-3 text-center text-muted" data-aos="fade-up" data-aos-duration="1500">Magnam dolores commodi
+                suscipit. Necessitatibus eius consequatur ex
+                aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui
+                impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <div class="row">
+                <div class="col-md-5 ">
+                    <div class="contact__box p-4 py-5">
+                        <div class="contact__info d-flex">
+                            <a href="#" class="rounded-circle  text-info mr-3 mt-2"><i
+                                    class="fa fa-location-arrow  "></i></a>
+                            <div>
+                                <h5 class="text--prim font-weight-bold mb-1 mt-1">Location:</h5>
+                                <p class="  ">A108 Adam Street, New York, NY 535022</p>
+                            </div>
+                        </div>
+                        <div class="contact__info d-flex">
+                            <a href="#" class="rounded-circle  text-info mr-3 mt-2"><i
+                                    class="fa fa-mail-bulk  "></i></a>
+                            <div>
+                                <h5 class="text--prim font-weight-bold mb-1 mt-1">Email:</h5>
+                                <p class="  ">info@example.com</p>
+                            </div>
+                        </div>
+                        <div class="contact__info d-flex">
+                            <a href="#" class="rounded-circle  text-info mr-3 mt-2"><i class="fa fa-phone  "></i></a>
+                            <div>
+                                <h5 class="text--prim font-weight-bold mb-1 mt-1">Phone:</h5>
+                                <p class="  ">+1 5589 55488 55s</p>
+                            </div>
+                        </div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+                            frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen=""
+                            mytubeid="mytube1"></iframe>
+
+                    </div>
+
+                </div>
+                <div class="col-md-7 ">
+                    <div class="contact__box contact__box--form px-4 pt-5 ">
+                        <form>
+                            <div class="form-row mt-2 ">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4" class="text-muted">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail4">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputPassword4" class="text-muted">Password</label>
+                                    <input type="password" class="form-control" id="inputPassword4">
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <label for="inputsubject" class="mt-2 text-muted">subject</label>
+                                <input type="text" class="form-control" id="inputsubject">
+                            </div>
+                            <div class="form-group ">
+                                <label for="exampleFormControlTextarea1" class="mt-2 text-muted">Message</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+                            </div>
+                            <button class="btn btn-info contact__btn">Send Massage</button>
+                        </form>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+    <!-- end contact section -->
+    <!-- start join section -->
+    <section class="join lightBlue-bg py-5" id="join">
+        <div class="container py-5">
+            <h2 class="text-center text--prim">Join Our Newsletter</h2>
+            <p class="text--prim text-center">Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <div class="join__inputGroup">
+                <input class="join__input" type="text" name="" id="">
+                <button class="btn btn-info">Subscripe</button>
+            </div>
+
+        </div>
+    </section>
+    <!-- end join section -->
+    <!-- start footer-links section  -->
+    <section class="footer-links py-5">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-3 col-md-6">
+                    <h2 class="text--prim text-uppercase mb-2">Arsha</h2>
+                    <p class="text-muted mb-4">
+                        A108 Adam Street <br>
+                        New York, NY 535022 <br>
+                        United States
+                    </p>
+                    <p class="text-muted mb-0"><span class="font-weight-bold">Phone: </span>+1 5589 55488 55</p>
+                    <p class="text-muted"><span class="font-weight-bold">Email: </span> info@example.com</p>
+
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text--prim">Useful Links</h5>
+                    <ul class="list-unstyled footer-links__List">
+                        <li class="mb-3"> <a href="#home">
+                                <i class="fa fa-chevron-right text-info mr-3"></i><span class="text-muted">Home</span>
+                            </a></li>
+                        <li class="mb-3"> <a href="#about" ">
+                            <i class=" fa fa-chevron-right text-info mr-3"></i><span class="text-muted">About Us</span>
+                            </a></li>
+                        <li class="mb-3"> <a href="#services" ">
+                            <i class=" fa fa-chevron-right text-info mr-3"></i><span class="text-muted">Service</span>
+                            </a></li>
+                        <li class="mb-3"> <a href="#services" ">
+                            <i class=" fa fa-chevron-right text-info mr-3"></i><span class="text-muted">Terms of
+                                    Service</span>
+                            </a></li>
+                        <li class="mb-3"> <a href="#" ">
+                            <i class=" fa fa-chevron-right text-info mr-3"></i><span class="text-muted">
+                                    Privacy policy</span>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-lg-0 mt-3">
+                    <h5 class="text--prim mb-3">Useful Links</h5>
+                    <ul class="list-unstyled footer-links__List">
+                        <li class="mb-3"> <a href="#home" ">
+                            <i class=" fa fa-chevron-right text-info mr-3"></i><span class="text-muted">
+                                    Web Design</span>
+                            </a></li>
+                        <li class="mb-3"> <a href="#home" ">
+                            <i class=" fa fa-chevron-right text-info mr-3"></i><span class="text-muted">
+                                    Web Development</span>
+                            </a></li>
+                        <li class="mb-3"> <a href="#home" ">
+                            <i class=" fa fa-chevron-right text-info mr-3"></i><span class="text-muted">
+                                    Product Management</span>
+                            </a></li>
+                        <li class="mb-3"> <a href="#home" ">
+                            <i class=" fa fa-chevron-right text-info mr-3"></i><span class="text-muted">
+                                    Privacy policy</span>
+                            </a></li>
+                        <li class="mb-3"> <a href="#home" ">
+                            <i class=" fa fa-chevron-right text-info mr-3"></i><span class="text-muted">
+                                    Privacy policy</span>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-lg-0 mt-3">
+                    <h5 class="text--prim mb-3">Our Social Networks</h5>
+                    <p class="text-muted mb-3">Cras fermentum odio eu feugiat lide par naso tierra videa magna derita
+                        valies</p>
+                    <div class="d-flex flex-wrap">
+                        <a href="http://www.facebook.com" class="mr-2 bg-info text-light rounded-circle"><i
+                                class="fab fa-facebook  p-2 "></i></a>
+                        <a href="http://www.twitter.com" class="mr-2 bg-info text-light rounded-circle"><i
+                                class="fab fa-twitter  p-2"></i></a>
+                        <a href="http://www.instagram.com" class="mr-2 bg-info text-light rounded-circle"><i
+                                class="fab fa-instagram  p-2"></i></a>
+                        <a href="http://www.linkedin.com" class="mr-2 bg-info text-light rounded-circle"><i
+                                class="fab fa-linkedin  p-2"></i></a>
+                        <a href="http://www.skype.com" class="mr-2 bg-info text-light rounded-circle"><i
+                                class="fab fa-skype  p-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- end footer-links section  -->
+    <!-- start main footer -->
+    <footer id="mainfooter" class="main-footer bg--prim p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-left">
+                    &copy; copyright <span class="font-weight-bold">Arsha</span> .All Rights Reserved
+                </div>
+                <div class="col-md-6 text-center text-md-right">
+                    Designed by <span class="text-info">Reham &hearts;</span>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- end main footer -->
+    <a href="#" class="scroll-top"><i class="fa fa-chevron-up"></i></a>
+
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <!-- popper -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <!-- boots-tap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <!-- iso top shuffle -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <!-- aos  animation on scroll-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- fancy popup -->
+    <script src="./js/jquery.fancybox.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
